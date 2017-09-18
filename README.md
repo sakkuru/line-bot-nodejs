@@ -5,7 +5,7 @@
     * Messaging API > Developer Trial
 
 2. Get Access tokens
-    * LINE BUSINESS CENTER > Accounts > Your Account, Messaging API, Line Developers
+    * LINE BUSINESS CENTER > Accounts > Your Account > Messaging API > Line Developers
     * Get Channel Access Token
 
 3. (Run code at local)
