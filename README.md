@@ -24,4 +24,4 @@ CHANNEL_ACCESS_TOKEN=... node app.js
     * Add Web App IP address to "Server White list"
     * Set Webhook URL at "Basic information" and click "Verify"
 
-6. Finally access to your bot via QA code
+6. Finally, you can access to your bot via QA code
