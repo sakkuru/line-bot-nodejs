@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({
 
 app.post('/message', (req, res) => {
 
+    console.log(req.body.events[0]);
+
     // reply text    
     const message = [{
         type: 'text',
@@ -48,7 +50,7 @@ app.get('/', (req, res) => {
     const innerText = `
   <body>
   <script>
-  document.body.innerText = Endpoint is location.href + 'message';
+  document.body.innerText = Endpoint is location.href + message;
   </script>
   </body>
   `;
@@ -56,7 +58,7 @@ app.get('/', (req, res) => {
     res.send(innerText);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`listening on ${port}`);
 });
