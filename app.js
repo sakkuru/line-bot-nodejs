@@ -47,13 +47,13 @@ app.post('/message', (req, res) => {
 
 // Top page access
 app.get('/', (req, res) => {
-    const innerText = `
-  <body>
-  <script>
-  document.body.innerText = Endpoint is location.href + message;
-  </script>
-  </body>
-  `;
+    const innerText = `<html>
+    <body>
+        <script type="application/javascript">
+        document.body.innerText = "Endpoint listing on port ${port}";
+        </script>
+    </body>
+    </html>`;
 
     res.send(innerText);
 });
